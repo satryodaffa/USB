@@ -14,7 +14,7 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 /**
  *
- * @author Haqimi
+ * @author Satryo
  */
 public class SortingSearching {
     // Binary Search
@@ -113,14 +113,12 @@ public class SortingSearching {
     
     // print names
     for(int alliesIndex = 0; alliesIndex < Statistics.length; alliesIndex++){   
-    // System.out.println("Enter Name: " + Statistics[alliesIndex][0]);
     String characteristics = "";
     
     // print characteristics
     for(int charaIndex = 1; charaIndex < Statistics[alliesIndex].length; charaIndex++){
     characteristics = characteristics + Statistics[alliesIndex][charaIndex] + " "; }
-    // System.out.println("Enter Characteristics: " + characteristics);
-    // System.out.println(" ");
+
     
     // Add allies to Linked List & Convert from String to integer
     allies.add(new Allies(Statistics[alliesIndex][0], 
@@ -133,12 +131,10 @@ public class SortingSearching {
                           Integer.parseInt(Statistics[alliesIndex][7])));
    }
    
-   // Sort the Characters' Attributes
-//   System.out.println(" ");
+
    Scanner inputString = new Scanner(System.in);
    System.out.print("Enter Attribute: ");
    String characters = inputString.next();
-//   System.out.println(characters);
    
    // Strength
    if(characters.equals("Strength")){
