@@ -12,10 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- *
- * @author Nayatama
- */
 
 public class WallMaria {
     public static void weakLayer() throws IOException {
