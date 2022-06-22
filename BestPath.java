@@ -30,7 +30,7 @@ public class BestPath {
     static LinkedList<List<Integer>> list = new LinkedList<>();
 
     // BFS Traversal algrithm
-    LinkedList<List<Integer>> BFS(int target) {
+    LinkedList<List<Integer>> BreadthFirstSearch(int target) {
         //to store the result list which show the path to titan
         LinkedList<List<Integer>> res = new LinkedList<>();
 
@@ -100,7 +100,7 @@ public class BestPath {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter location of Titan: ");
         int input = scanner.nextInt();
-        LinkedList<List<Integer>> res = graph.BFS(input);
+        LinkedList<List<Integer>> res = graph.BreadthFirstSearch(input);
         System.out.println("");
         System.out.println("Best paths: ");
         for (List path : res) {
