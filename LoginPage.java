@@ -28,7 +28,7 @@ public class LoginPage {
         System.out.print("Input any number stated above to continue: ");
         String instructionNum = sc.nextLine();
         while (!isValidInstruction(instructionNum)){
-            System.out.print("Plase enter a valid instruction: ");
+            System.out.print("Please enter a valid instruction: ");
             instructionNum = sc.nextLine(); 
         }
         carrySpecificInstruction(instructionNum);
