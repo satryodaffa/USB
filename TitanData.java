@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Project2_3_1;
+package FinalProject;
 /**
  *
  * @author Satryo
@@ -157,7 +157,7 @@ public Integer getDangerRisk(){
 }
 public void setDangerRisk(int dangerRisk){
     this.dangerRisk = dangerRisk;
-}
+}   
     @Override
     public int compareTo(TitanData o) {
         return this.getDangerRisk().compareTo(o.getDangerRisk());
