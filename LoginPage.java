@@ -25,7 +25,7 @@ public class LoginPage {
         System.out.println("||                                                                                      ||");
         System.out.println("||                         *NOTE: You can enter \"0\" to exit*                            ||");
         System.out.println("==========================================================================================");
-        System.out.print("Press any number stated above to continue: ");
+        System.out.print("Input any number stated above to continue: ");
         String instructionNum = sc.nextLine();
         while (!isValidInstruction(instructionNum)){
             System.out.print("Plase enter a valid instruction: ");
