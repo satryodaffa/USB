@@ -1,4 +1,5 @@
 package FinalProject;
+// 2.5 Marley Word Converter
 
 import java.util.LinkedList;
 import java.util.Objects;
@@ -85,7 +86,6 @@ public class WordConverter {
                     return;
                 }
             }
-        
             hashMap[x].add(new Entry(key, value));
             size++;
             return;
@@ -202,31 +202,23 @@ class Converter {
             if(marley.charAt(i) >= 'a' && marley.charAt(i) <= 'z'){
                 
                 word.append(translater.get(new Key(marley.charAt(i))).getValue());
-//                System.out.print(translater.get(new Key(marley.charAt(i))).getValue());
             }
             else if(marley.charAt(i) == '^'){
-//                i++;
-//                char a = translater.get(new Key(marley.charAt(i))).getValue();
-//                String marley1 = String.valueOf(a);
-//                System.out.print(marley1.toUpperCase());
                 i++;
                 char upper = translater.get(new Key(marley.charAt(i))).getValue();
                 String marleyUp = String.valueOf(upper);
                 word.append(marleyUp.toUpperCase());
                 
             }
-            else if(marley.charAt(i) == '$'){
-//                System.out.print(" ");    
+            else if(marley.charAt(i) == '$'){  
                 word.append(" ");
                 
             }
             else if(marley.charAt(i) == ','){
-//                System.out.print(", ");
                 word.append(",");
                 
             } 
             else{
-//                System.out.print(marley.charAt(i));
                 word.append(marley.charAt(i));
 
                 
@@ -237,20 +229,38 @@ class Converter {
         for(int i = 0; i < rev.length(); i++){
             if(rev.charAt(i) == '('){
                 int tmp = i;
-                StringBuilder r = new StringBuilder();
+                StringBuilder s = new StringBuilder();
                 while(rev.charAt(tmp) != ')'){
                     tmp++;
                 }
                     
-                r.append(rev, i + 1, tmp);
-//                System.out.print(r.reverse().toString());
-                word.append(r.reverse().toString());
+                s.append(rev, i + 1, tmp);
+                word.append(s.reverse().toString());
                 i = tmp;
             }else{
-//                System.out.print(translater.get(new Key(rev.charAt(i))).getValue());
                 word.append(rev.charAt(i));
                 }
         }
         System.out.println(word);
+        
+        logout();
+    }
+    
+    public static void logout(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("");
+        System.out.println("What would you like to do next? (Enter \"1\" to use the Word Converter again or \"0\" to go back to the Main Menu)/n");
+        System.out.print("Input command: ");
+        int in = sc.nextInt();
+        if(in == 0){
+            for (int i = 0; i < 30; ++i) 
+                System.out.println();
+            LoginPage.runLoginPage();
+        }
+        else{
+            System.out.println();
+            convert();
+        }
+        
     }
 }
