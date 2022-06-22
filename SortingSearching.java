@@ -336,9 +336,13 @@ public class SortingSearching {
                 System.out.println();
             LoginPage.runLoginPage();
         }
-        else{
+        else if(in == 1){
             System.out.println();
             soldierArrangementGrouping();
+        }
+        else{
+            System.out.println("Please enter a valid command!");
+            logout();
         }
         
     }
