@@ -14,7 +14,7 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 /**
  *
- * @author Satryo
+ * @author Haqimi
  */
 public class SortingSearching {
     // Binary Search
