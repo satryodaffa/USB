@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 import java.util.LinkedList;
 /**
  *
+ *
  * @author Haqimi
  */
 public class ReadErensAllies {
