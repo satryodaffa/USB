@@ -2,11 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Project2_1;
+package FinalProject;
+
 import java.text.DecimalFormat;
+
 /**
  *
- * @author Satryo
+ * @author Haqimi
  */
 public class Allies implements Comparable<Allies> {
     public String name;
