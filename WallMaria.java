@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package FinalProject;
+// 2.6 Protecting Wall of Maria
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -70,14 +71,14 @@ public class WallMaria {
             } 
         }
         
-        // print the layer edges
-        for(int wm = 0; wm < wallMaria.size(); wm++)
-        {   System.out.print("Layer " + (wm + 1) + ": ");
-        for(int l = 0; l < wallMaria.get(wm).size(); l++)
-        {   System.out.print(" " + wallMaria.get(wm).get(l));
-        totalSpots[wallMaria.get(wm).get(l)] = totalSpots[wallMaria.get(wm).get(l)] + 1;
-        }
-        System.out.println("");
+//         print the layer edges
+        for(int wm = 0; wm < wallMaria.size(); wm++){
+//            System.out.print("Layer " + (wm + 1) + ": ");
+            for(int l = 0; l < wallMaria.get(wm).size(); l++){   
+//                System.out.print(" " + wallMaria.get(wm).get(l));
+                totalSpots[wallMaria.get(wm).get(l)] = totalSpots[wallMaria.get(wm).get(l)] + 1;
+            }
+//            System.out.println("");
         }
         
         for (int i = 0; i < totalSpots.length; i++) {
@@ -91,6 +92,24 @@ public class WallMaria {
         System.out.println("");
 //        System.out.println("Counter Weakest spot: " + weakestSpot);
         System.out.println("Weakest part of the wall is at postion " + spotNumber);
+        
+        logout();
         }
-    
+     public static void logout() throws IOException{
+        Scanner sc = new Scanner(System.in);
+        System.out.println("");
+        System.out.println("What would you like to do next? (Enter \"1\" to check the Weakest part of the Wall again or \"0\" to go back to the Main Menu)/n");
+        System.out.print("Input command: ");
+        int in = sc.nextInt();
+        if(in == 0){
+             for (int i = 0; i < 50; ++i) 
+                System.out.println();
+            LoginPage.runLoginPage();
+        }
+        else{
+            System.out.println();
+            weakLayer();
+        }
+        
+    }
 }
