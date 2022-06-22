@@ -3,10 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package FinalProject;
+
 /**
+ *
  *
  * @author Satryo
  */
+
 public class TitanData implements Comparable<TitanData> {
 // attributes of the titans
 private int number;
