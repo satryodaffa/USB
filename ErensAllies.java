@@ -2,7 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Project2_1;
+package FinalProject;
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
@@ -11,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
  *
- * @author Satryo
+ * @author Haqimi
  */
 public class ErensAllies {
     public static void main(String[] args) {
@@ -33,7 +34,7 @@ public class ErensAllies {
     
     // data.txt
     try {
-        outputStream = new PrintWriter(new FileOutputStream("C:/Users/Satryo/Documents/FSKTM/Linkedlist/data.txt"));
+        outputStream = new PrintWriter(new FileOutputStream("D:/Java/LinkedList/data.txt"));
         }   
     catch (FileNotFoundException ex) {
         Logger.getLogger(ReadErensAllies.class.getName()).log(Level.SEVERE, null, ex);
