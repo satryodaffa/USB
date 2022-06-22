@@ -2,8 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Project2_2;
-import Project2_1.Allies;
+package FinalProject;
+// 2.2 Soldiers Arrangement and Grouping
+
+import FinalProject.Allies;
 import java.util.LinkedList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -89,7 +91,7 @@ public class SortingSearching {
         return names;
     }
    
-    public static void main(String[] args) {
+    public static void soldierArrangementGrouping() {
     SortingSearching sortingSearchingTwo = new SortingSearching();
     // input the characters' statistics
         String[][] Statistics = {{"Reiner Braun", "185", "95", "9", "7", "7", "10", "8"}, 
@@ -132,11 +134,11 @@ public class SortingSearching {
    }
    
    // Sort the Characters' Attributes
-   System.out.println(" ");
+//   System.out.println(" ");
    Scanner inputString = new Scanner(System.in);
    System.out.print("Enter Attribute: ");
    String characters = inputString.next();
-   System.out.println(characters);
+//   System.out.println(characters);
    
    // Strength
    if(characters.equals("Strength")){
@@ -229,11 +231,13 @@ public class SortingSearching {
    System.out.println(" "); }
    }
    
+   
+   
    // Searching
    Scanner inputSearching = new Scanner(System.in);
    String names = "";
    LinkedList<String> namesComma = new LinkedList<String>();
-   System.out.print("Enter Attribute: ");
+   System.out.print("Finding ability: ");
    String attributes = inputSearching.next();
    
    Scanner inputValue = new Scanner(System.in);
@@ -316,7 +320,26 @@ public class SortingSearching {
         });
    names = sortingSearchingTwo.binarySearch(allies, value, attributes);
    }
-
+   
    System.out.println("Soldier: " + names + " ");
+   logout();
  }
+    
+    public static void logout(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("");
+        System.out.println("What would you like to do next? (Enter \"1\" to check Soldiers Arrangement and Grouping again or \"0\" to go back to the Main Menu)/n");
+        System.out.print("Input command: ");
+        int in = sc.nextInt();
+        if(in == 0){
+             for (int i = 0; i < 50; ++i) 
+                System.out.println();
+            LoginPage.runLoginPage();
+        }
+        else{
+            System.out.println();
+            soldierArrangementGrouping();
+        }
+        
+    }
 }
