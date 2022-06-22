@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 /**
  *
- *
  * @author PREDATOR
  */
 public class ScoutingMission {
