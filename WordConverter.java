@@ -257,9 +257,14 @@ class Converter {
                 System.out.println();
             LoginPage.runLoginPage();
         }
-        else{
+        else if(in == 1){
             System.out.println();
             convert();
+        }
+        else{
+            System.out.println();
+            System.out.println("Please enter a valid command!");
+            logout();
         }
         
     }
